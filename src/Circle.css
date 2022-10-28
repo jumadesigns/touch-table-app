@@ -3,7 +3,9 @@
     flex-direction: center;
     align-items: center;
     justify-content: center;
-    /*height: 100vh;*/
+    position: relative;
+    margin-left: 70vw;
+    height: 50vh;
   }
   
   .v{
@@ -11,14 +13,15 @@
     flex-direction: center;
     align-items: center;
     justify-content: center;
+    position: absolute;
     
   }
   
   .directions-div {
-    display: flex;
+    /* display: flex;
     flex-direction: center;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
   }
   
   /*need to hide this classname for the circles*/
@@ -64,6 +67,10 @@
     border: 7px solid rgb(206, 206, 206);
     z-index: 3;
   }
+
+  .circle3:hover{
+    background-color: #808080;
+  }
   
   /*Need to hide this classname for the arrows*/
   .menu-div {
@@ -73,6 +80,13 @@
     flex-direction: center;
     justify-content: center;
     position: absolute;
+  }
+
+  .menu-item:hover{
+    background-color: #808080;
+    transition: 0.4s;
+    padding: 2px
+
   }
   
   .menu-item:nth-child(1) {
@@ -108,6 +122,10 @@
   
   .x-button:hover {
     background-color: rgb(233, 232, 232);
+  }
+
+  .chapters-div{
+    position: absolute;
   }
   
   .chapters {

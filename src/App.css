@@ -1,7 +1,14 @@
 .main-div{
+  /* background-color: rgb(72, 74, 76); */
+}
+
+.carousel-div{
   display: flex;
   justify-content: column;
   align-items: center;
   flex-direction: column;
 }
 
+.circle-div{
+  background-color: blue;
+}

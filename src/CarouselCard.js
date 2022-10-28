@@ -205,7 +205,7 @@ class MyCarousel extends Component {
           goToSlide={this.state.goToSlide}
           offsetRadius="10"
           animationConfig={config.gentle}
-          showNavigation
+          //showNavigation
         />
         <button onClick={this.switchForward}>Fastforward</button>
         <button onClick={this.switchBackward}>back</button>
