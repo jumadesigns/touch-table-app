@@ -1,18 +1,15 @@
 import "./CarouselCard.css";
 import React, { Component } from "react";
 import Carousel from "react-spring-3d-carousel";
-import { v4 as uuidv4 } from 'uuid';
-//import uuidv4 from "uuid";
+import { v4 as uuidv4 } from "uuid";
 import { config } from "react-spring";
-import { Card, CardBody, CardTitle, CardText } from "reactstrap";
-import Circle from "./Circle";
+import { Button, Card, CardBody, CardTitle, CardText } from "reactstrap";
 
 class MyCarousel extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      //goToSlide: ""
-      goToSlide: 0
+      goToSlide: 0,
     };
   }
 
@@ -22,9 +19,7 @@ class MyCarousel extends Component {
       content: (
         <Card className="card-main">
           <CardBody>
-          <div className="circle-div"
-          id="circle-div"
-          ></div>
+            <div className="circle-div" id="circle-div"></div>
             <CardTitle className="card-title" tag="h5">
               HEADLINE
             </CardTitle>
@@ -35,36 +30,14 @@ class MyCarousel extends Component {
             </CardText>
           </CardBody>
         </Card>
-      )
-    },
-    {
-      key: uuidv4(),
-      content: (
-        <Card className="card-main">
-        <CardBody>
-        <div className="circle-div"
-        id="circle-div"
-        ></div>
-          <CardTitle className="card-title" tag="h5">
-            HEADLINE
-          </CardTitle>
-          <CardText className="card-text">
-            I quickly put up some text ere to quickly populate this card to
-            enable my attempts to replicate this design work. I hope you love
-            it :)
-          </CardText>
-        </CardBody>
-      </Card>
-      )
+      ),
     },
     {
       key: uuidv4(),
       content: (
         <Card className="card-main">
           <CardBody>
-          <div className="circle-div"
-          id="circle-div"
-          ></div>
+            <div className="circle-div" id="circle-div"></div>
             <CardTitle className="card-title" tag="h5">
               HEADLINE
             </CardTitle>
@@ -75,110 +48,122 @@ class MyCarousel extends Component {
             </CardText>
           </CardBody>
         </Card>
-      )
+      ),
     },
     {
       key: uuidv4(),
       content: (
         <Card className="card-main">
-        <CardBody>
-        <div className="circle-div"
-        id="circle-div"
-        ></div>
-          <CardTitle className="card-title" tag="h5">
-            HEADLINE
-          </CardTitle>
-          <CardText className="card-text">
-            I quickly put up some text ere to quickly populate this card to
-            enable my attempts to replicate this design work. I hope you love
-            it :)
-          </CardText>
-        </CardBody>
-      </Card>
-      )
+          <CardBody>
+            <div className="circle-div" id="circle-div"></div>
+            <CardTitle className="card-title" tag="h5">
+              HEADLINE
+            </CardTitle>
+            <CardText className="card-text">
+              I quickly put up some text ere to quickly populate this card to
+              enable my attempts to replicate this design work. I hope you love
+              it :)
+            </CardText>
+          </CardBody>
+        </Card>
+      ),
     },
     {
       key: uuidv4(),
       content: (
         <Card className="card-main">
-        <CardBody>
-        <div className="circle-div"
-        id="circle-div"
-        ></div>
-          <CardTitle className="card-title" tag="h5">
-            HEADLINE
-          </CardTitle>
-          <CardText className="card-text">
-            I quickly put up some text ere to quickly populate this card to
-            enable my attempts to replicate this design work. I hope you love
-            it :)
-          </CardText>
-        </CardBody>
-      </Card>
-      )
+          <CardBody>
+            <div className="circle-div" id="circle-div"></div>
+            <CardTitle className="card-title" tag="h5">
+              HEADLINE
+            </CardTitle>
+            <CardText className="card-text">
+              I quickly put up some text ere to quickly populate this card to
+              enable my attempts to replicate this design work. I hope you love
+              it :)
+            </CardText>
+          </CardBody>
+        </Card>
+      ),
     },
     {
       key: uuidv4(),
       content: (
         <Card className="card-main">
-        <CardBody>
-        <div className="circle-div"
-        id="circle-div"
-        ></div>
-          <CardTitle className="card-title" tag="h5">
-            HEADLINE
-          </CardTitle>
-          <CardText className="card-text">
-            I quickly put up some text ere to quickly populate this card to
-            enable my attempts to replicate this design work. I hope you love
-            it :)
-          </CardText>
-        </CardBody>
-      </Card>
-      )
+          <CardBody>
+            <div className="circle-div" id="circle-div"></div>
+            <CardTitle className="card-title" tag="h5">
+              HEADLINE
+            </CardTitle>
+            <CardText className="card-text">
+              I quickly put up some text ere to quickly populate this card to
+              enable my attempts to replicate this design work. I hope you love
+              it :)
+            </CardText>
+          </CardBody>
+        </Card>
+      ),
     },
     {
       key: uuidv4(),
       content: (
         <Card className="card-main">
-        <CardBody>
-        <div className="circle-div"
-        id="circle-div"
-        ></div>
-          <CardTitle className="card-title" tag="h5">
-            HEADLINE
-          </CardTitle>
-          <CardText className="card-text">
-            I quickly put up some text ere to quickly populate this card to
-            enable my attempts to replicate this design work. I hope you love
-            it :)
-          </CardText>
-        </CardBody>
-      </Card>
-      )
+          <CardBody>
+            <div className="circle-div" id="circle-div"></div>
+            <CardTitle className="card-title" tag="h5">
+              HEADLINE
+            </CardTitle>
+            <CardText className="card-text">
+              I quickly put up some text ere to quickly populate this card to
+              enable my attempts to replicate this design work. I hope you love
+              it :)
+            </CardText>
+          </CardBody>
+        </Card>
+      ),
     },
     {
       key: uuidv4(),
       content: (
         <Card className="card-main">
-        <CardBody>
-        <div className="circle-div"
-        id="circle-div"
-        ></div>
-          <CardTitle className="card-title" tag="h5">
-            HEADLINE
-          </CardTitle>
-          <CardText className="card-text">
-            I quickly put up some text ere to quickly populate this card to
-            enable my attempts to replicate this design work. I hope you love
-            it :)
-          </CardText>
-        </CardBody>
-      </Card>
-      )
-    }
+          <CardBody>
+            <div className="circle-div" id="circle-div"></div>
+            <CardTitle className="card-title" tag="h5">
+              HEADLINE
+            </CardTitle>
+            <CardText className="card-text">
+              I quickly put up some text ere to quickly populate this card to
+              enable my attempts to replicate this design work. I hope you love
+              it :)
+            </CardText>
+          </CardBody>
+        </Card>
+      ),
+    },
+    {
+      key: uuidv4(),
+      content: (
+        <Card className="card-main">
+          <CardBody>
+            <div className="circle-div" id="circle-div"></div>
+            <CardTitle className="card-title" tag="h5">
+              HEADLINE
+            </CardTitle>
+            <CardText className="card-text">
+              I quickly put up some text ere to quickly populate this card to
+              enable my attempts to replicate this design work. I hope you love
+              it :)
+            </CardText>
+          </CardBody>
+        </Card>
+      ),
+    },
   ].map((slide, index) => {
-    return { ...slide, onClick: () => this.setState({ goToSlide: index }) };
+    return {
+      ...slide,
+      /*This moves the carousel on a click*/ onClick: () =>
+        this.setState({ goToSlide: index }),
+    };
   });
 
   switchForward = () => {
@@ -207,8 +192,17 @@ class MyCarousel extends Component {
           animationConfig={config.gentle}
           //showNavigation
         />
-        <button onClick={this.switchForward}>Fastforward</button>
-        <button onClick={this.switchBackward}>back</button>
+
+        {/* Added this functionality in case it is needed
+
+       <Button 
+        onClick={this.switchForward}>
+        Next
+       </Button>
+       <Button 
+        onClick={this.switchBackward}>
+        back
+        </Button> */}
       </div>
     );
   }

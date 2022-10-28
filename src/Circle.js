@@ -3,11 +3,11 @@ import { IoMdCheckmark, IoIosMenu, IoIosMore } from "react-icons/io";
 import {
   VscTriangleLeft,
   VscTriangleRight,
-  VscChromeClose
+  VscChromeClose,
 } from "react-icons/vsc";
 import { useState } from "react";
 
-export default function Circle() {
+export default function Circle(props, next) {
   const [chapters, setChapters] = useState(false);
 
   function showChapters() {
@@ -42,24 +42,21 @@ export default function Circle() {
             <div className="menu-item">
               <IoIosMore />
             </div>
-            <div
-              className="menu-item"
-              onClick={() => {
-                console.log("left button");
-              }}
-            >
+            <div className="menu-item" onClick={"left button"}>
               <VscTriangleLeft />
             </div>
           </div>
           <div
             className="circle1"
-            //onClick={()=>{console.log("clicked")}}
+            onClick={() => {
+              console.log("clicked");
+            }}
           >
             <div className="circle2">
               <div className="circle3" onClick={showChapters}>
                 <IoMdCheckmark
                   style={{
-                    fontSize: "70px"
+                    fontSize: "70px",
                   }}
                 />
               </div>
